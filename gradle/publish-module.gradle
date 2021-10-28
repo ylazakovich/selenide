@@ -1,7 +1,7 @@
 apply plugin: 'maven-publish'
 
 ext {
-  groupId = 'com.codeborne'
+  groupId = 'com.github.selenide'
 }
 
 archivesBaseName = artifactId
