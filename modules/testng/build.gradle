@@ -1,6 +1,6 @@
 ext {
   artifactId = 'selenide-testng'
-  testngVersion = '7.9.0'
+  testngVersion = '7.11.0'
 }
 
 dependencies {
