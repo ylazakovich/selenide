@@ -17,6 +17,7 @@ dependencies {
   api('org.opentest4j:opentest4j:1.3.0')
 
   implementation("org.apache.httpcomponents.client5:httpclient5:$httpClientVersion")
+  implementation("org.assertj:assertj-core:$assertjVersion") {transitive = false}
 
   implementation("com.github.valfirst.browserup-proxy:browserup-proxy-core:$browserupProxyVersion") {
     transitive = false
