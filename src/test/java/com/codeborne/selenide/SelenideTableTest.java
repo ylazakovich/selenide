@@ -16,9 +16,9 @@ class SelenideTableTest {
     SelenideElement row = mock();
     ElementsCollection cells = mock();
     SelenideElement cell = mock();
-    when(table.findAll(By.cssSelector("tbody > tr"))).thenReturn(rows);
+    when(table.findAll(By.xpath("./tbody/tr"))).thenReturn(rows);
     when(rows.get(1)).thenReturn(row);
-    when(row.findAll(By.cssSelector(":scope > td, :scope > th"))).thenReturn(cells);
+    when(row.findAll(By.xpath("./td | ./th"))).thenReturn(cells);
     when(cells.get(2)).thenReturn(cell);
 
     assertThat(SelenideTable.of(table).cell(1, 2)).isSameAs(cell);

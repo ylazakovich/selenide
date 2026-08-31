@@ -12,8 +12,8 @@ import org.openqa.selenium.By;
  * and existing Selenide waits, commands, and diagnostics remain in control.</p>
  */
 public final class SelenideTable {
-  private static final By BODY_ROWS = By.cssSelector("tbody > tr");
-  private static final By ROW_CELLS = By.cssSelector(":scope > td, :scope > th");
+  private static final By BODY_ROWS = By.xpath("./tbody/tr");
+  private static final By ROW_CELLS = By.xpath("./td | ./th");
 
   private final SelenideElement table;
 
