@@ -1,8 +1,8 @@
 # Table API and extension boundary
 
-Status: accepted documentation for the `main` branch at `3d7020342`.
+Status: complete table API documentation for the Selenide q4j subsystem port.
 
-This document describes the table API shipped by q4j. It is deliberately an API record, not a history of the table pull requests.
+This document describes the table API shipped by Selenide. It is deliberately an API record, not a history of the table pull requests.
 
 ## Public type and dependency map
 
@@ -148,11 +148,11 @@ No Appium dependency, type, driver setup, fixture, runtime implementation, plugi
 `ServiceLoader` mechanism is introduced by this PR. Existing 0.6.0 FQCNs and q4j table consumers
 remain unchanged.
 
-At present, the structural contracts are packaged in the `q4j-selenide` artifact and package,
+At present, the structural contracts are packaged in Selenide core and package,
 which also depends on Selenide. Consequently, a future external plugin may be forced to pull
 Selenide transitively; the boundary is structurally neutral but the published artifact is not yet
 dependency-neutral. Extracting the contracts to a neutral artifact/package is a future-major
-compatibility action because moving the 0.6.0 FQCNs now would break released callers.
+compatibility action because moving the released FQCNs now would break callers.
 
 ## Weakness and evidence matrix
 

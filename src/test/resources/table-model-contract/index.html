@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Table model contract fixtures</title>
+    <style>
+      body {
+        font-family: arial, sans-serif;
+        margin: 2rem auto;
+        max-width: 55rem;
+        padding: 0 1rem;
+        color: #222;
+      }
+      h1 {
+        font-size: 1.7rem;
+        margin-bottom: 0.25rem;
+      }
+      p.overview {
+        color: #555;
+        margin-top: 0;
+        max-width: 50rem;
+      }
+      ul.fixtures {
+        list-style: none;
+        padding: 0;
+      }
+      ul.fixtures li {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        margin: 0.5rem 0;
+      }
+      ul.fixtures a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #1a73e8;
+      }
+      ul.fixtures p {
+        margin: 0.25rem 0 0;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table model contract fixtures</h1>
+    <p class="overview">
+      Each page is a self-contained fixture demonstrating what the Q4J table
+      model verifies. Open a page to see a live table you can drive with the
+      Selenide table elements.
+    </p>
+
+    <ul class="fixtures">
+      <li>
+        <a href="classic.html">Classic table variants</a>
+        <p>
+          Plain, dynamic, flex, and horizontal legacy tables; delayed rows,
+          remount, header skipping, missing cells.
+        </p>
+      </li>
+      <li>
+        <a href="custom-grids.html">Custom and styled grid adapters</a>
+        <p>
+          Div/ARIA/headerless grids, nested grid isolation, repeated headers,
+          async row restoration.
+        </p>
+      </li>
+      <li>
+        <a href="edge-cases.html">Classic table edge cases</a>
+        <p>
+          Duplicate headers, header inside tbody, and nested table isolation.
+        </p>
+      </li>
+      <li>
+        <a href="queries.html">Table queries</a>
+        <p>
+          Zero-based indexing, conditions, unique rows, native waits, header
+          reorder, string-first lookups.
+        </p>
+      </li>
+      <li>
+        <a href="assertions.html">Table assertions and embedded controls</a>
+        <p>
+          Header/row/cell assertions, buttons, inputs, selects, links, and
+          contenteditable semantics.
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>
